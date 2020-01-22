@@ -9,13 +9,17 @@ Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you 
 - Clone React App 
 ```console
 ~$ git clone https://github.com/tdiderich/react-amplify-class.git
-~$ cd todo-list/
+~$ cd react-amplify-class/todo-list/
 ```
 - Install dependancies
 ```console
 ~$ npm install
 ```
-- Install Amplify CLI
+- Start App
+```console
+~$ npm start
+```
+- Install Amplify CLI (You NEED an AWS account for this. If you do not have one, you can get a free tier account by signing up here: https://aws.amazon.com/console/)
 ```console
 ~$ npm install --save aws-amplify aws-amplify-react uuid
 ~$ npm install -g @aws-amplify/cli
