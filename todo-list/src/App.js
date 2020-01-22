@@ -5,7 +5,7 @@ import Todo from './todo-page/Todo';
 import Profile from './profile-page/Profile';
 import Home from './home-page/Home';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, withRouter } from 'react-router-dom';
 
 
 import Navbar from 'react-bootstrap/Navbar';
@@ -26,22 +26,21 @@ class App extends React.Component {
     this.setState({
       userLoggedIn: true
     })
-    console.log(this.state)
   }
 
   handleLogout() {
     this.setState({
       userLoggedIn: false
     })
-    console.log(this.state)
   }
+
 
   render() {
     return (
       <Router>
         <div >
           <Navbar className="navbar navbar-dark bg-dark" expand="lg">
-            <Navbar.Brand as={Link} to="/" >Todo List App</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" >Todojo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto" activeKey={this.state.activeKey}>
@@ -50,8 +49,8 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
             {this.state.userLoggedIn ?
-              <Button variant="danger" onClick={this.handleLogout.bind(this)}>Logout</Button> :
-              <Button onClick={this.handleLogin.bind(this)}>Login</Button>}
+              <Button variant="light" onClick={this.handleLogout.bind(this)}>Logout</Button> :
+              <Button variant="light" onClick={this.handleLogin.bind(this)}>Login</Button>}
           </Navbar>
         </div>
         <Switch>
@@ -64,4 +63,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withRouter(App);

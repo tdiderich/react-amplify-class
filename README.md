@@ -1,7 +1,7 @@
 # Building Serverless ReactJS Apps with AWS Amplify Udemy Course
 
 ## Intro
-Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you will learn how to create production grade ReactJS apps using AWS Amplify. We will cover all of the features of Amplify including initial setup, Authentication, GraphQL APIs, Serverless Lambda Functions, Creating REST APIs, Sotorage with s3, Analytics, and Deployment. 
+Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you will learn how to create production grade ReactJS apps using AWS Amplify. We will cover all of the features of Amplify including initial setup, Authentication, GraphQL APIs, Serverless Lambda Functions, Creating REST APIs, Sotorage with s3, Analytics, and Deployment. Docs: https://aws-amplify.github.io/docs/js/start?platform=purejs
 
 
 ## Setup
@@ -9,17 +9,17 @@ Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you 
 - Clone React App 
 ```console
 ~$ git clone https://github.com/tdiderich/react-amplify-class.git
+~$ cd todo-list/
 ```
 - Install dependancies
 ```console
-~$ npm install --save react-bootstrap bootstrap font-awesome formik yup react-router react-router-dom
+~$ npm install
 ```
 - Install Amplify CLI
 ```console
 ~$ npm install --save aws-amplify aws-amplify-react uuid
 ~$ npm install -g @aws-amplify/cli
 ```
-
 
 ## Authentication
 - Add with CLI

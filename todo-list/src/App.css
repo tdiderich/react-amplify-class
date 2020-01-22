@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Montserrat|Permanent+Marker|Raleway|Roboto|Oxygen&display=swap');
+
+.jumbo-image-home {
+    background-image: url("./images/home.jpg");
+    height: 100vh;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbo-image-todos {
+  background-image: url("./images/todos.jpg");
+  height: 100vh;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbo-image-profile {
+  background-image: url("./images/profile.jpg");
+  height: 100vh;
+  background-size: cover;
 }
