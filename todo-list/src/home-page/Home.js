@@ -8,10 +8,6 @@ function Home(props) {
 
     const history = useHistory();
 
-    function clickLogin() {
-        history.push('/login')
-    }
-
     function clickTodos() {
         history.push('/todos')
     }
@@ -35,7 +31,7 @@ function Home(props) {
                         <br />
                         <Button variant="dark" onClick={() => clickProfile()}>View Profile</Button>
                     </div> :
-                    <Button variant="light" onClick={() => clickLogin()}>Login</Button>}
+                    <Button variant="light" onClick={props.login}>Login</Button>}
                 </Container>
             </Jumbotron>
         </div>
