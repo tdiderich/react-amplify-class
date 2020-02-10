@@ -3,9 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+// bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// nav + routing
 import { BrowserRouter } from 'react-router-dom';
+
+// amplify 
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
 
 ReactDOM.render(
     <BrowserRouter>

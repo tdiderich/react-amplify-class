@@ -27,7 +27,25 @@ Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you 
 
 ## Authentication
 - Add with CLI
-- Simple Auth
+- Simple Auth (withAuthenticator wrapping the app)
+    - Customize the form? 
+- Custom Auth Flows
+ - Create Sign Up Page (as class)
+ - Add signup route
+ - Import Signup component
+ - Update Signup button to be link
+ - Test link out
+ - Copy form imports / form from todo component
+ - Add the handle signup function
+ - Copy / update schema
+ - Update the form to make sense (don't forget the function)
+ - Add Sign In page
+ - Add Sign In Route
+ - Add Auth listener for constructor + auth updates
+ - Remove old fake login functions
+ - Update all LOGIN buttons
+ - Update all LOGOUT buttons
+
 - AWS Auth
 - Social Provider
 - Sign Up
@@ -63,3 +81,7 @@ Welcome to Building Serverless ReactJS Apps with AWS Amplify. In this class you 
 
 ## Deployment 
 - Deploy with CLI
+
+
+## MASTER TODOS
+- 
